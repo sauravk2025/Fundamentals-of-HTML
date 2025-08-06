@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Registration Form</h3>
+    <form action="./media.html" method="get" autocomplete="on"><!--used to collect user data.Action attribute is used to process the data. The default HTTP method when submitting form data is GET. Autocomplete on helps to show suggestion when typing the input text-->
+        <label for="sname">Surname</label>
+        <input type="text" id="sname" name="sname" value="Mr">
+        <label for="fname">Firstname</label> <!--Clicking on label gives access to the input field. The for attribute of the <label> tag should be equal to the id attribute of the <input> element to bind them together. it tells the browser:“This label belongs to that specific input element.”-->
+        <input type="text" id="fname" name="fname" placeholder="Firstname" >
+        <!--name is used to identify the input field when the form is submitted.When this form is submitted, the browser sends the data in a key-value pair like username:xyz. The name becomes the key in the form data sent to the backend.Value is user typed data or specified value. If the name attribute is omitted, the value of the input field will not be sent at all.-->
+        <label for="lname">Lastname</label>
+        <input type="text" id="lname" name="lname" placeholder="Lastname">
+        <br><br>
+        <label for="mail">Email</label>
+        <input type="email" id="mail" name="mail" required placeholder="xyz@gmail.com">
+        <label for="pass">Password</label>
+        <input type="password" required pattern="(?=.*[0-9])(?=.*[a-zA-Z]).{6,}"
+       title="Password must be at least 6 characters and contain letters and numbers">
+
+        <br><br>
+        <label for="place"> Select your country</label>
+        <select name="country" id="place">
+            <option value="India">India</option>
+            <option value="America">America</option>
+            <option value="Canada">Canada</option>
+            <option value="Africa">Africa</option>
+            <option value="China">China</option>
+        </select>
+        <br><br>
+        Choose your experience
+        <br>
+        <input type="radio" id="one" name="experience" value="1">
+        <label for="one">1 year</label>
+        <input type="radio" id="two" name="experience" value="2">
+        <label for="two">2 years</label>
+        <input type="radio" id="three" name="experience" value="3">
+        <label for="three">1 year</label>
+        <!--name is same for everything since only 1 radio button can be selected at a time-->
+        <br><br>
+        Choose your Skills
+        <BR>
+        <input type="checkbox" id="skill1" name="Skill1" value="Python">
+        <label for="skill1">Python</label>
+        <input type="checkbox" id="skill1" name="Skill2" value="C">
+        <label for="skill2">C</label>
+        <input type="checkbox" id="skill1" name="Skill3" value="Java">
+        <label for="skill3">Java</label>
+        <br><br>
+        <label for="why">Why do we hire you?</label>
+        <br>
+        <textarea id="why" name="whyhire" placeholder="Include your skills and achievements to improve chance of selection" rows="5" cols="30"></textarea>
+        <br><br>    
+        <input type="submit" value="Finish">
+    </form>
+</body>
+</html>

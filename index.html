@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><!--to store metadata-->
+    <meta charset="UTF-8">
+    <!--Adding a favicon which appears on top of the tab-->
+    <link rel="icon" href="https://rukminim2.flixcart.com/image/850/1000/kf8kvbk0-0/poster/y/q/5/medium-ddsp328-lion-ronaldo-cr7-original-imafvqz7pbzj3gpg.jpeg?q=20&crop=false">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index page<!-- title is very important for search engine optimization (SEO). The text is used by search engine algorithms to decide the order when listing pages in search results--></title>
+</head>
+<!--invisible mode (cntrl+/) -->
+<!-- toggle word wrap - alt+z or settings->command palette-> >toggle word wrap -->
+<body>
+
+    <header><!--Semantics tags are header,nav,main(section,article,aside),footer,figure.Improves SEO-->
+        <h1>Heading tag sepcifies the importance.</h1>
+        <h2>Only use heading tag for headings as internally the browser uses it to structure the website</h2>
+    </header>
+
+    <main>
+        <section><!--"A section is a thematic grouping of content, typically with a heading.Usually 3 bars to get multiple options in web apps to reveal multiple options"-->
+            <h3>Heading under section tag</h3>
+            <p title="I am a tooltip">This      is paragraph tag</p>
+
+            <nav><!--The nav element is intended only for major blocks of navigation links-->
+                <a href="./hello.html" target="_blank">This is a relative link</a>
+                <br>
+                <a href="https://www.google.com" target="_main">This is a absolute link</a>
+            </nav>
+
+            <figure>
+                <img src="https://talksport.com/wp-content/uploads/sites/5/2025/06/cristiano-ronaldo-portugal-celebrates-scoring-1000491335.jpg?strip=all&w=960" alt="Select image and then copy image address" height="200">
+                <figcaption>Cristiano Ronaldo</figcaption>
+            </figure>
+        </section>
+
+        <article><!--An article should make sense on its own-->
+            <div>
+                Div is Block element which takes full width.But by default height is 0.The div element is often used to group sections of a web page together.
+                <b>bold</b>
+                <i>italics</i>
+                <u>underline</u>
+                <big>Big</big>
+                <small>Small</small>
+                <p><em>Emphasize</em><br><strong>Strong</strong><br><mark>Mark</mark><br><del>Delete</del><br><ins>Insert</ins></p>
+            </div>
+            <div>
+                A block-level element always starts on a new line.
+            </div>
+            <br>
+            <span>
+                Span is an inline element takes only the width per size.
+            </span>
+            <span>
+                Span stays on same line. This is a new span.Also according to HTML standards, you’re not supposed to put a block element inside an inline one.
+            </span>
+            <ul style="list-style-type:disc;">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ul>
+            <ul style="list-style-type:none;">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ul>
+            <ol type="1">
+                <li>Coffee</li>
+                    <ol type="A">
+                        <li>Bru</li>
+                        <li>Nestle</li>
+                    </ol>
+                <li>Tea</li>
+                <li>Milk</li>                
+            </ol>
+            <dl> <!-- (a description list).-->
+                <dt>Coffer</dt>
+                <dd>No Sugar</dd>
+                <dt>Tea</dt>
+                <dd>Sugar</dd>
+            </dl>
+        </article>
+        
+        <aside><!--for displaying ads which are not relevant to us-->
+            <p>H<sub>2</sub>O</p>
+            <p>A<sup>n</sup>+B</p>
+            <pre>To count spaces     in the text since p tag does not count spaces</pre>
+            <p><!--inline comments-->Inside there is inline comment. And for p tag there is always space above and below</p>
+            <p>To check space below </p>
+            Table 1
+            <table>
+                <thead><!--used for semantics or layout to wrap table header-->
+                    <caption>Student Data</caption>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                    </tr>
+                </thead>
+                <tbody><!--used for semantics or layout to wrap table body-->
+                    <tr>
+                        <td>ABC</td>
+                        <td>22</td>
+                    </tr>
+                    <tr>
+                        <td>XYZ</td>
+                        <td>23</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            Table 2
+            <table>
+                <thead><!--used for semantics or layout to wrap table header-->
+                    <caption>Student Data</caption>
+                    <tr>
+                        <th colspan="3">Information</th><!--when we want to give single heading.colspan is used to centre the heading .It specified how much columns centre it should be-->
+                    </tr>
+                </thead>
+                <tbody><!--used for semantics or layout to wrap table body-->
+                    <tr>
+                        <td>ABC</td>
+                        <td>22</td>
+                        <td>1676</td>
+                    </tr>
+                    <tr>
+                        <td>XYZ</td>
+                        <td>23</td>
+                        <td>16276</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            Table 3 - Vertical Table Headers
+            <table>
+                <tr>
+                  <th>Firstname</th>
+                  <td>Jill</td>
+                  <td>Eve</td>
+                </tr>
+                <tr>
+                  <th>Lastname</th>
+                  <td>Smith</td>
+                  <td>Jackson</td>
+                </tr>
+                <tr>
+                  <th>Age</th>
+                  <td>94</td>
+                  <td>50</td>
+                </tr>
+            </table>
+        </aside>
+    </main>
+
+    <footer>
+        <p>This is a footer tag</p>
+        <nav>
+            <a href="mailto:sauravsalvi.77@gmail.com" title="Click to get email">Contact</a>
+        </nav>
+    </footer>
+
+</body>
+</html>
